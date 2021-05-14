@@ -1,0 +1,148 @@
+.range {
+    width: 450px;
+    height: 200px;
+}
+
+.belt {
+    background: url(../img/belt1.jpg);
+}
+
+.sneacers {
+    background-image: url(../img/sneakers1.jpg);
+}
+
+.craft {
+    background-image: url(../img/scarf1.jpg);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.hov:hover .description {
+    text-decoration: underline;
+} 
+
+.hov:hover .btn {
+    color: black;
+    background: blanchedalmond;
+}
+
+.menu {
+    text-decoration: none;
+}
+
+.range:hover > .menu {
+    text-decoration: underline;
+}
+li {
+    list-style-type: none;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+ .lin {
+     text-decoration: none;
+     display: block;
+     color: gray;
+ }
+
+ .lin:hover {
+    color: black;
+ }
+
+.navbar a.linkk {
+    color: blue;
+}
+
+#link1:hover {
+     color: rgb(255, 255, 255);
+ }
+ 
+ #link2:hover {
+    color: rgb(255, 255, 255);
+}
+
+#link3:hover {
+    color: rgb(255, 255, 255);
+}
+
+#link4:hover {
+    color: rgb(255, 255, 255);
+}
+
+#link5:hover {
+    color: rgb(255, 255, 255);
+}
+
+#link6:hover {
+    color: rgb(255, 255, 255);
+}
+
+.belt {
+    grid-area: belt;
+}
+
+.sneacers {
+    grid-area: sneacers;
+}
+
+.craft {
+    grid-area: craft;
+}
+
+@media (max-width: 576px) {
+    
+    .gridcontainer {
+    font-size: 26px;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    body {
+        width: 100vh;
+    }
+    
+    .belt {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sneacers {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .craft {
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: round;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .footerend {
+        padding-left: 85px !important;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .footer .ms-5 {
+        margin-left: 0px !important;
+    }
+}
