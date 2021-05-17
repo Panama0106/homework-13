@@ -46,25 +46,25 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
- .lin {
-     text-decoration: none;
-     display: block;
-     color: gray;
- }
+.lin {
+    text-decoration: none;
+    display: block;
+    color: gray;
+}
 
- .lin:hover {
+.lin:hover {
     color: black;
- }
+}
 
 .navbar a.linkk {
     color: blue;
 }
 
 #link1:hover {
-     color: rgb(255, 255, 255);
- }
- 
- #link2:hover {
+    color: rgb(255, 255, 255);
+}
+
+#link2:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -96,7 +96,7 @@ li {
     grid-area: craft;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) and (max-width: 400px) {
     
     .gridcontainer {
     font-size: 26px;
