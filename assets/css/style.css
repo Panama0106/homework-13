@@ -1,148 +1,157 @@
-.range {
-    width: 450px;
-    height: 200px;
+
+.par {
+    color: rgb(255, 153, 0);
+}
+
+.list {
+    flex-direction: column;
 }
 
 .belt {
-    background: url(../img/belt1.jpg);
+    background-image: url(../img/belt1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    text-align: center;
+    background-size: cover;
 }
 
 .sneacers {
     background-image: url(../img/sneakers1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px;
+    text-align: center;
+    background-size: cover;
 }
 
 .craft {
     background-image: url(../img/scarf1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    text-align: center;
+    background-size: cover;
 }
 
-.main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
+.ms-5 {
+    margin-left: 0px !important;
 }
 
-.hov:hover .description {
-    text-decoration: underline;
-} 
-
-.hov:hover .btn {
-    color: black;
-    background: blanchedalmond;
+.py-2 {
+    padding-bottom: 0px !important;
 }
 
-.menu {
-    text-decoration: none;
-}
+@media (min-width: 576px) {
 
-.range:hover > .menu {
-    text-decoration: underline;
-}
-li {
-    list-style-type: none;
-}
-
-.footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.lin {
-    text-decoration: none;
-    display: block;
-    color: gray;
-}
-
-.lin:hover {
-    color: black;
-}
-
-.navbar a.linkk {
-    color: blue;
-}
-
-#link1:hover {
-    color: rgb(255, 255, 255);
-}
-
-#link2:hover {
-    color: rgb(255, 255, 255);
-}
-
-#link3:hover {
-    color: rgb(255, 255, 255);
-}
-
-#link4:hover {
-    color: rgb(255, 255, 255);
-}
-
-#link5:hover {
-    color: rgb(255, 255, 255);
-}
-
-#link6:hover {
-    color: rgb(255, 255, 255);
-}
-
-.belt {
-    grid-area: belt;
-}
-
-.sneacers {
-    grid-area: sneacers;
-}
-
-.craft {
-    grid-area: craft;
-}
-
-@media (max-width: 576px) and (max-width: 400px) {
-    
-    .gridcontainer {
-    font-size: 26px;
+    .range {
+        width: 450px;
+        height: 200px;
     }
 
-    .list {
-        flex-direction: column;
-    }
-
-    body {
-        width: 100vh;
+    .par {
+        color: saddlebrown;
     }
     
     .belt {
-        margin-left: auto;
-        margin-right: auto;
+        background: url(../img/belt.jpg);
+        background-position: center;
+        background-size: cover;
     }
+    
     .sneacers {
-        margin-left: auto !important;
-        margin-right: auto !important;
+        background-image: url(../img/sneakers.jpg);
+        background-size: cover;
     }
-
+    
     .craft {
-        margin-left: auto;
-        margin-right: auto;
-        background-repeat: round;
+        background-image: url(../img/scarf.jpg);
+        background-size: cover;
     }
 
-    h1 {
-        font-size: 35px;
+    .list {
+        flex-direction: row;
     }
-
-    .footerend {
-        padding-left: 85px !important;
-    }
-
-}
-
-
-@media (max-width: 576px) {
+    
     .main {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
     }
+    
+    .hov:hover .description {
+        text-decoration: underline;
+    } 
+    
+    .hov:hover .btn {
+        color: black;
+        background: blanchedalmond;
+    }
+    
+    .menu {
+        text-decoration: none;
+    }
+    
+    .range:hover > .menu {
+        text-decoration: underline;
+    }
+    li {
+        list-style-type: none;
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .lin {
+        text-decoration: none;
+        display: block;
+        color: gray;
+    }
+    
+    .lin:hover {
+        color: black;
+    }
+    
+    .navbar a.linkk {
+        color: blue;
+    }
+    
+    #link1:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    #link2:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    #link3:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    #link4:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    #link5:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    #link6:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    /* .belt {
+        grid-area: belt;
+    }
+    
+    .sneacers {
+        grid-area: sneacers;
+    }
+    
+    .craft {
+        grid-area: craft;
+    } */
 
-    .footer .ms-5 {
-        margin-left: 0px !important;
-    }
 }
